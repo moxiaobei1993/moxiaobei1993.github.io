@@ -1,4 +1,4 @@
 ---
-title: "Search"
-layout: "search"
+title: "Search搜索"
+layout: "search测试"
 ---

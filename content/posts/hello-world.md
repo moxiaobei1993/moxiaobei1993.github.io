@@ -1,5 +1,5 @@
 ---
-author: "BeiYu"
+author: "莫小贝"
 title: "Hello Worl!,你好 Github  Actions!"
 date: "2022-01-16"
 description: "Guide to Hugo-PaperMod-Template"
