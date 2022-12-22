@@ -1,4 +1,4 @@
-baseURL: "https://moxiaobei1993.github.io/blog"
+baseURL: "https://moxiaobei1993.github.io/blog" 
 title: PaperMod
 paginate: 5
 theme: hugo-PaperMod
