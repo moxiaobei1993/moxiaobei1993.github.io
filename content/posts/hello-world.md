@@ -1,6 +1,6 @@
 ---
 author: "BeiYu"
-title: "Hello World"
+title: "Hello Worl!,你好 Github  Actions!"
 date: "2022-01-16"
 description: "Guide to Hugo-PaperMod-Template"
 tags: ["emoji"]
@@ -10,9 +10,10 @@ ShowBreadCrumbs: false
 ---
 
 # Markdown
+
 ## 标题
 
-共有6级标题
+共有 6 级标题
 
 # H1
 
@@ -49,7 +50,6 @@ ShowBreadCrumbs: false
 | Bob   | 27  |
 | Alice | 23  |
 
-
 ## 代码块
 
 ```python
@@ -67,9 +67,9 @@ print("hello world")
 
 #### 无序列表
 
--   List item
--   Another item
--   And another item
+- List item
+- Another item
+- And another item
 
 ## KaTeX
 
@@ -96,14 +96,12 @@ $$
  \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
 $$
 
-
 ## Emoji
 
-可以直接输入Emoji表情，或者使用[shortcode](http://www.emoji-cheat-sheet.com/)
+可以直接输入 Emoji 表情，或者使用[shortcode](http://www.emoji-cheat-sheet.com/)
 
 <p><span class="nowrap"><span class="emojify">🙈</span> <code>:see_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙉</span> <code>:hear_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙊</span> <code>:speak_no_evil:</code></span></p>
 <br>
-
 
 ## 夜间模式
 
