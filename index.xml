@@ -20,15 +20,22 @@
     </item>
     
     <item>
-      <title></title>
-      <link>https://moxiaobei1993.github.io/blog/posts/%E8%BF%99%E6%98%AF%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%BD%91%E9%A1%B5/</link>
+      <title>Archive这是1</title>
+      <link>https://moxiaobei1993.github.io/blog/archives/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://moxiaobei1993.github.io/blog/posts/%E8%BF%99%E6%98%AF%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%BD%91%E9%A1%B5/</guid>
-      <description></description>
+      <guid>https://moxiaobei1993.github.io/blog/archives/</guid>
+      <description>archives这是33</description>
     </item>
     
-    
+    <item>
+      <title>Search搜索</title>
+      <link>https://moxiaobei1993.github.io/blog/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://moxiaobei1993.github.io/blog/search/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
