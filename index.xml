@@ -9,7 +9,16 @@
       <link>https://moxiaobei1993.github.io/blog/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 16 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://moxiaobei1993.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://moxiaobei1993.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>这是第一个网页，主要是学习如何发布</title>
+      <link>https://moxiaobei1993.github.io/blog/posts/%E8%BF%99%E6%98%AF%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%BD%91%E9%A1%B5/</link>
+      <pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://moxiaobei1993.github.io/blog/posts/%E8%BF%99%E6%98%AF%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%BD%91%E9%A1%B5/</guid>
+      <description>这里是描述选项</description>
+    </item>
+    
     <item>
       <title>Hello Worl!,你好 Github  Actions!</title>
       <link>https://moxiaobei1993.github.io/blog/posts/hello-world-copy/</link>
