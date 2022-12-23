@@ -24,8 +24,8 @@ jobs:
           submodules: true
           fetch_depth: 1
 
-      - name: Get Theme
-        run: git submodule update --init --recursive
+      #- name: Get Theme
+        #run: git submodule update --init --recursive
 
       #- name: Update theme to Latest commit
         #run: git submodule update --remote --merge
