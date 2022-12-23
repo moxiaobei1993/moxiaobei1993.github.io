@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://moxiaobei1993.github.io/blog/sitemap.xml
