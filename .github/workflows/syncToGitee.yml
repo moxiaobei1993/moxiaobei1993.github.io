@@ -20,7 +20,7 @@ jobs:
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
           dst_token: ${{ secrets.GITEE_TOKEN }}
           mappings: "blog=>blog"
-          black_list: "blog"
+          white_list: "blog"
           static_list: "blog"
           force_update: true
           debug: true
