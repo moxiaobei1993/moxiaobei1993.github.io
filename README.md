@@ -14,3 +14,4 @@ Error: Process completed with exit code 128.
 再次测试一下
 重复
 测试一下，如果修改了部分内容，发布的网页是全部修改还是只修改部分
+现在修改了 hosts，git 的 pull 和 push 应该可以连接到。
