@@ -5,7 +5,7 @@ on:
   # 当你向分支 gh-pages 推送了代码时触发此工作流
   push:
     branches:
-      - main
+      - gh-pages
 
 jobs:
   #工作名称
@@ -16,7 +16,7 @@ jobs:
         uses: Yikun/hub-mirror-action@master
         with:
           src: "github/moxiaobei1993"
-          dst: "gitee/villege"
+          dst: "gitee/moxiaobei1993"
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
           dst_token: ${{ secrets.GITEE_TOKEN }}
           mappings: "blog=>blog"
