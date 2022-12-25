@@ -23,4 +23,4 @@ jobs:
           white_list: "blog"
           static_list: "blog"
           force_update: true
-		      debug: true
+          debug: true
