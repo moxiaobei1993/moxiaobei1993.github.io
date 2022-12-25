@@ -6,7 +6,7 @@ date="2022-12-13T21:00:00+08:00"
 toc=true
 +++
 
-- # 一劳永逸破解 Typora 全系列
+# 一劳永逸破解 Typora 全系列
 
 第一次看到这个是在 52pojie.cn，https://www.52pojie.cn/forum.php?mod=viewthread&tid=1710146&page=1&authorid=300010，当然，其他博客也有，http://ioohu.com/News/1/487993.html。
 
