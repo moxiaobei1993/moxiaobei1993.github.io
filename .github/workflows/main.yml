@@ -25,10 +25,10 @@ jobs:
           fetch_depth: 1
 
       #- name: Get Theme
-        #run: git submodule update --init --recursive
+      #run: git submodule update --init --recursive
 
       #- name: Update theme to Latest commit
-        #run: git submodule update --remote --merge
+      #run: git submodule update --remote --merge
 
       - name: Setup hugo
         uses: peaceiris/actions-hugo@v2
@@ -43,3 +43,18 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+
+      #这里是开始同步仓库库到gitee
+      - name: Mirror the Github organization repos to Gitee.
+        #uses: Yikun/hub-mirror-action@v1.2
+        uses: Yikun/hub-mirror-action@master
+        with:
+          src: "github/moxiaobei1993"
+          dst: "gitee/moxiaobei1993"
+          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+          dst_token: ${{ secrets.GITEE_TOKEN }}
+          mappings: "blog=>blog"
+          white_list: "blog"
+          static_list: "blog"
+          force_update: true
+          debug: true

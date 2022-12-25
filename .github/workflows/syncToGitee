@@ -5,7 +5,7 @@ on:
   # 当你向分支 gh-pages 推送了代码时触发此工作流
   push:
     branches:
-      - gh-pages
+      - main
 
 jobs:
   #工作名称
@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Mirror the Github organization repos to Gitee.
+        #uses: Yikun/hub-mirror-action@v1.2
         uses: Yikun/hub-mirror-action@master
         with:
           src: "github/moxiaobei1993"
