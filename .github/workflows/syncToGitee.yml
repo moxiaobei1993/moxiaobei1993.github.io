@@ -15,12 +15,12 @@ jobs:
       - name: Mirror the Github organization repos to Gitee.
         uses: Yikun/hub-mirror-action@master
         with:
-          src: 'github/moxiaobei1993'
-          dst: 'gitee/xiaobei'
+          src: "github/moxiaobei1993"
+          dst: "gitee/xiaobei"
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
-          dst_token:  ${{ secrets.GITEE_TOKEN }}
+          dst_token: ${{ secrets.GITEE_TOKEN }}
           mappings: "blog=>blog"
           black_list: "blog"
           static_list: "blog"
           force_update: true
-		      debug: true
+          debug: true
