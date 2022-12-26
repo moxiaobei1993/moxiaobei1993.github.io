@@ -53,8 +53,8 @@ jobs:
           dst: "gitee/moxiaobei1993"
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
           dst_token: ${{ secrets.GITEE_TOKEN }}
-          mappings: "blog=>blog"
-          white_list: "blog"
-          static_list: "blog"
+          mappings: "moxiaobei1993.github.io=>blog"
+          white_list: "moxiaobei1993.github.io"
+          static_list: "moxiaobei1993.github.io"
           force_update: true
           debug: true
