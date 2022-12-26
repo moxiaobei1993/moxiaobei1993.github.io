@@ -70,11 +70,68 @@ https://www.bilibili.com/video/BV1m4411c7ia
 
 ### 存在的问题
 
-每次修改网页后，需要hugo -D生成public的静态网页，再git push上传，比较麻烦。
+每次修改网页后，需要hugo -D生成public的静态网页，再git push上传public文件夹，比较麻烦。
 
-### 使用github actions直接部署hugo网站
+### 使用github actions自动部署hugo网站
 
+其实可以搜索很多教程，我使用的是下面教程里面的actions模板
 
+【北屿】GitHub Actions+GitHub Pages免费搭建个人博客https://www.bilibili.com/video/BV1ua411B7WH
 
+这个模板其实也一般，但是也能满足要求，用了就没有再折腾修改了。
 
+直接fork这个模板https://github.com/awesome-actions-template/hugo-papermod-template，然后删除除.github/workflows/main.yml外的所有内容，只需要使用main.yml文件的自动化动作。
 
+```
+# 工作流的名称
+name: hugo-deploy
+
+# 触发事件
+on:
+  # 当你向主分支 main 推送了代码时触发此工作流
+  push:
+    paths-ignore:
+      - "images/**"
+      - "LICENSE"
+      - "README.md"
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+        with:
+          ref: main
+          submodules: true
+          fetch_depth: 1
+
+      - name: Get Theme
+        run: git submodule update --init --recursive
+
+      - name: Update theme to Latest commit
+        run: git submodule update --remote --merge
+
+      - name: Setup hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.83.0"
+
+      - name: Build
+        run: hugo --buildDrafts --gc --verbose --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+```
+
+后面将自己的网站源代码，就是blog目录上传到mian分支， action会自动生成public并部署到gh-pages分支，直接访问https://moxiaobei1993.github.io/blog/ 就可以访问了。
+
+以后只要main分支有任何修改，actions都会自动启动，并推送更新的到gh-pages分支，网站也就随之更新。
+
+注意：这里的更新使用了一部分github pages的bot，所以会清空gh-pages分支的内容，之前想在gh-pages分支放yml文件，是不行的，会被清空。
